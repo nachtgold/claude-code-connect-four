@@ -3,18 +3,20 @@
 A Claude Code mod: type `/connect-four` and a pane opens where you play Connect Four against an AI.
 
 ```
- ·    ·    ·    ·    ·    ·    ·
- ·    ·    ·    ·    ·    ·    ·
- ·    ·    ·    ●    ·    ·    ·
- ·    ·    ●    ●    ·    ·    ·
- ·    ●    ●    ●    ●    ·    ·
- ●    ●    ●    ●    ●    ·    ●
-1: ↓ 2: ↓ 3: ↓ 4: ↓ 5: ↓ 6: ↓ 7: ↓
+⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪
+⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪
+⚪ ⚪ ⚪ 🟡 ⚪ ⚪ ⚪
+⚪ ⚪ 🔴 🔴 ⚪ ⚪ ⚪
+⚪ 🟡 🔴 🟡 ⚪ ⚪ ⚪
+🔴 🟡 🟡 🔴 🔴 ⚪ ⚪
+1  2  3  4  5  6  7
 
 ⠹ AI is thinking  ▰▰▰▱▱▱▱
 You 2 · AI 1 · Draws 0
 n: New game  q: Close
 ```
+
+🔴 you · 🟡 the AI · ⚪ empty. In Claude Code the pieces are drawn as red and yellow `●`.
 
 ## Controls
 
@@ -40,12 +42,22 @@ Texts are English or German. German is used when Claude Code's `language` settin
 
 ## Install
 
+Requires Claude Code 2.1.287 or later (tested with 2.1.288). Works in the terminal and in the Code tab
+of the Claude Desktop app.
+
+```bash
+claude plugin marketplace add nachtgold/claude-code-connect-four
+claude plugin install connect-four@connect-four
+```
+
+Start `claude` (or run `/reload-plugins` in an open session), then type `/connect-four`.
+
+To try it without installing:
+
 ```bash
 git clone https://github.com/nachtgold/claude-code-connect-four.git
 claude --plugin-dir ./claude-code-connect-four
 ```
-
-Then type `/connect-four`.
 
 ## Development
 
