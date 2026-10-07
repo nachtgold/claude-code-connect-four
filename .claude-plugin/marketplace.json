@@ -7,7 +7,7 @@
       "name": "connect-four",
       "source": "./",
       "description": "Play Connect Four against an AI in a Claude Code pane: /connect-four",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "author": { "name": "nachtgold" },
       "homepage": "https://github.com/nachtgold/claude-code-connect-four",
       "license": "MIT",
