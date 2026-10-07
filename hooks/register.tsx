@@ -67,7 +67,7 @@ export const register: Register = on => {
   })
 
   on('command.run', { command: 'connect-four' }, async $ => {
-    await $.ui.open({ id: PANE, title: 'Connect Four', focus: true, closeOnEscape: true, rows: 14, columns: 44 })
+    await $.ui.open({ id: PANE, title: 'Connect Four', focus: true, closeOnEscape: true, rows: 15, columns: 44 })
     return { text: (await t$($)).opened }
   })
 
@@ -115,7 +115,7 @@ export const register: Register = on => {
             </Box>
           ))}
         </Box>
-        <Text> </Text>
+        <Text dimColor>{tx.hint}</Text>
         <Text bold={g.winner !== 0}>{status}</Text>
         <Text dimColor>{tx.score(g.score.you, g.score.ai, g.score.draw)}</Text>
         <Box flexDirection="row" gap={2}>

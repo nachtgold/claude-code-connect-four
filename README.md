@@ -10,7 +10,7 @@ A Claude Code mod: type `/connect-four` and a pane opens where you play Connect 
 ⚪ 🟡 🔴 🟡 ⚪ ⚪ ⚪
 🔴 🟡 🟡 🔴 🔴 ⚪ ⚪
 1  2  3  4  5  6  7
-
+Press 1–7 (columns, left to right) to drop your red piece. Four in a row wins.
 ⠹ AI is thinking  ▰▰▰▱▱▱▱
 You 2 · AI 1 · Draws 0
 n: New game  q: Close

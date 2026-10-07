@@ -4,7 +4,7 @@ import { AI, COLS, YOU, bestMove, emptyBoard, newGame, play } from '../hooks/gam
 
 const PANE = { component: 'Pane', requestId: 'connect-four',
   props: { title: 'Connect Four', isFocused: true, bodyColumns: 44, placement: 'inline',
-    scroll: { offset: 0, bodyRows: 14 }, view: {} } } as const
+    scroll: { offset: 0, bodyRows: 15 }, view: {} } } as const
 
 describe('AI', () => {
   test('takes an immediate win', () => {
@@ -26,8 +26,8 @@ describe('AI', () => {
 })
 
 const LANGS = [
-  { env: 'en_US.UTF-8', yourTurn: /Your turn \(red\)/, thinking: /AI is thinking/, played: /AI played column/ },
-  { env: 'de_DE.UTF-8', yourTurn: /Du bist dran \(rot\)/, thinking: /KI denkt nach/, played: /KI spielte Spalte/ },
+  { env: 'en_US.UTF-8', hint: /Press 1–7/, yourTurn: /Your turn \(red\)/, thinking: /AI is thinking/, played: /AI played column/ },
+  { env: 'de_DE.UTF-8', hint: /Drücke 1–7/, yourTurn: /Du bist dran \(rot\)/, thinking: /KI denkt nach/, played: /KI spielte Spalte/ },
 ]
 
 for (const lang of LANGS)
@@ -39,6 +39,7 @@ for (const lang of LANGS)
       const ui = await $.ui.mount({ plugin: 'connect-four', surface, ...PANE })
       await ui.press({ key: 'new' })
       expect(await ui.find({ type: 'Text', text: lang.yourTurn })).toBeDefined()
+      expect(await ui.find({ type: 'Text', text: lang.hint })).toBeDefined()
 
       const pressed = ui.press({ key: 'drop-3' })
       await clock.settle()
