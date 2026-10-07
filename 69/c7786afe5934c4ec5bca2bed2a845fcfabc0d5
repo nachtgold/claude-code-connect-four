@@ -1,0 +1,21 @@
+.claude-plugin/marketplace.json
+  s_9227eabef7d1c7::t_11aaa4dada3e6f 1-18
+README.md
+  s_9227eabef7d1c7::t_7812534eab44d9 6-12,19-20,45-56
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "69c7786afe5934c4ec5bca2bed2a845fcfabc0d5",
+  "prompts": {},
+  "sessions": {
+    "s_9227eabef7d1c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "03318f5f-1b34-49af-9112-0251dbf5f075",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "nachtgold <kai.zimmermann@amplimind.io>"
+    }
+  }
+}
