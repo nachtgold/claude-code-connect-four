@@ -1,0 +1,26 @@
+hooks/i18n.ts
+  s_cbbcc5dde6637d::t_1591f089a1af24 11,25
+tests/connect-four.test.tsx
+  s_cbbcc5dde6637d::t_664ae180ae3577 7,29-30,42
+hooks/register.tsx
+  s_cbbcc5dde6637d::t_df398f209b41c6 118
+  s_cbbcc5dde6637d::t_664ae180ae3577 70
+README.md
+  s_cbbcc5dde6637d::t_1591f089a1af24 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "2dd84c35a22166a00b47a57600a9e19c5d6a742c",
+  "prompts": {},
+  "sessions": {
+    "s_cbbcc5dde6637d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d222403d-0110-4aca-83a9-bb9e13197122",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "nachtgold <kai.zimmermann@amplimind.io>"
+    }
+  }
+}
